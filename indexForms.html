@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flight Form</title>
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<style>
+	.outsideBox {
+		background-color: black;
+		height: 600px;
+		width: 800px;
+		padding: 50px;
+		margin: 0 auto;
+		margin-top: 80px;
+		opacity: 0.85;
+	}
+
+	h1 {
+		color: white;
+		text-align: center;
+	}
+
+	i, p {
+		color: white;
+		
+	}
+	.row {
+		text-align: center;
+		margin-top: 30px;
+	}
+	.row2{
+		text-align: center;
+	}
+
+
+	input {
+		margin: 4px 15px 4px;
+		/*margin-right: 15px;*/
+	}
+	.oneWay {
+		margin-left: 20px;
+		color: white;
+	}
+
+	label {
+		color: white;
+	}
+	.tick{
+		margin-left: 170px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.form-control {
+		width: 100%;
+		margin: 0px;
+
+	}
+	.row1 {
+		margin-right: 0px;
+	}
+	.select {
+		display: inline-block;
+		margin-top: 30px;
+	}
+	select {
+		display: inline-block;
+	}
+	button {
+		margin: 0 auto;
+		margin-left: 200px;
+		margin-top: 30px;
+		height: 40px;
+		width: 300px;
+		color: white;
+		background-color: green;
+		border-color: white;
+		border-radius: 10px;
+	}
+	body {
+    background-image: url("background-photo.jpg");
+    background-size: 1700px 1000px;
+    background-repeat: no-repeat;
+}
+
+	</style>
+</head>
+<body>
+
+	<div class="outsideBox">
+		<h1> Book a Trip</h1>
+
+		<div class="row">
+			<div class="col-sm-4">
+				<i class="fa fa-plane fa-2x" aria-hidden="true"></i>
+				<p>Flights</p>
+			</div>	
+			<div class="col-sm-4">
+				<i class="fa fa-car fa-2x" aria-hidden="true"></i>
+				<p>Cars</p>
+			</div>
+			<div class="col-sm-4">
+				<i class="fa fa-building-o fa-2x" aria-hidden="true"></i>
+				<p>Hotels</p>
+			</div>	
+		</div>
+	<label class="tick"><input type="checkbox" class="oneWay">One way</input></label>
+	<label class="tick"><input type="checkbox" class="return">Return</input></label>
+
+
+	<div class="row1">
+		<div class="col-sm-6">
+			<div class="form-group">
+			  <label for="usr">Leave From</label>
+			  <input type="text" class="form-control" id="usr">
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<div class="form-group">
+			  <label for="pwd">Arrive to</label>
+			  <input type="password" class="form-control" id="pwd">
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<div class="form-group">
+			  <label for="usr">Leave on</label>
+			  <input type="text" class="form-control" id="usr">
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<div class="form-group">
+			  <label for="pwd">Return on</label>
+			  <input type="password" class="form-control" id="pwd">
+			</div>
+		</div>
+		</div>
+
+		<div class="row2">
+			<div class="col-sm-4">
+				<p class="select" style="display: inline-block;">Adults</p>
+				  <select name="adults" style="display: inline-block;">
+				    <option value="0">0</option>
+				    <option value="1">1</option>
+				    <option value="2">2</option>
+				    <option value="3">3</option>
+				  </select>
+			</div>	
+			<div class="col-sm-4">
+				<p class="select" style="display: inline-block;">Children</p>
+				  <select name="adults" style="display: inline-block;">
+				    <option value="0">0</option>
+				    <option value="1">1</option>
+				    <option value="2">2</option>
+				    <option value="3">3</option>
+				  </select>
+			</div>
+			<div class="col-sm-4">
+				<p class="select" style="display: inline-block;">Infants</p>
+				  <select name="adults" style="display: inline-block;">
+				    <option value="0">0</option>
+				    <option value="1">1</option>
+				    <option value="2">2</option>
+				    <option value="3">3</option>
+				  </select>
+			</div>	
+		</div>
+		<button>Search for Flights</button>
+	</div>
+
+<!-- script always above the closing body tag -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			 
+	
+
+		</script>
+</body>
+</html>
